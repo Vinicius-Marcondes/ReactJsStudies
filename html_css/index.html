@@ -4,10 +4,32 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hello World!</title>
+        <style>
+            /* modifying  a tag properties*/
+            h1 { 
+                background-color: blue;
+            }
+
+            /* modifying the properties from a specific Id */
+            #paragraph {
+                background-color: antiquewhite;
+            }
+
+            /* modifying the properties from a specific class */
+            .red-background {
+                background-color: red;
+            }
+
+            .right-border {
+                border-left: 0.5rem solid black;
+            }
+            red
+        </style>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>
+        <h1>This has blue background</h1>
+        <h1 id="header" class="red-background right-border">Hello World!</h1>
+        <p id="paragraph" class="right-border">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Fuga, excepturi magnam. Soluta totam, maiores placeat iure voluptate, 
             quaerat hic fugiat necessitatibus officiis corporis pariatur quo mollitia, 
