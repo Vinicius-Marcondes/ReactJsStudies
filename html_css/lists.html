@@ -11,24 +11,65 @@
             box-sizing: border-box;
         }
 
-        .section-one {
-            width: 200px;
-            background: violet;
-            border: 5px solid black;
-            padding: 15px;
-            margin: 20px;
+        nav {
+            display: flex;
+            align-items: center;
+            background: #999898;
         }
 
-        .section-two {
-            background: turquoise;            
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
         }
     </style>
 </head>
 <body>
-    <section class="section-one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Optio debitis minus, voluptatum culpa omnis laudantium voluptates aliquid earum magni perferendis quas? 
-        Quibusdam illo eveniet aut minus possimus est impedit minima.</section>
-    <section class="section-two">Sections Two</section>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="1" start="10">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <dl>
+        <dt>Lorem Ipsum</dt>
+        <dd>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt rerum aliquam incidunt commodi sit voluptas, odit dolorem et corrupti ipsa quis eveniet aperiam, non aut soluta accusantium repellat accusamus. Illum!
+        </dd>
+        <dt>Lorem Ipsum</dt>
+        <dd>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt rerum aliquam incidunt commodi sit voluptas, odit dolorem et corrupti ipsa quis eveniet aperiam, non aut soluta accusantium repellat accusamus. Illum!
+        </dd>
+    </dl>
+    
 </body>
 </html>
 <!-- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model -->
