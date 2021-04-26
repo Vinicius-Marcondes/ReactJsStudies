@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        table caption {
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum
+    </p>
+    <div class="responsive-table">
+        <table>
+            <caption>Description</caption>
+            <thead>
+                <tr>
+                    <th>Title 1</th>
+                    <th>Title 2</th>
+                    <th>Title 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Content 1</td>
+                    <td>Content 2</td>
+                    <td>Content 3</td>
+                </tr>
+                <tr>
+                    <td>Content 1</td>
+                    <td>Content 2</td>
+                    <td>Content 3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Content 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer 1</td>
+                    <td>Footer 2</td>
+                    <td>Footer 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
