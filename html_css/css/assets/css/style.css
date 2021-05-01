@@ -3,17 +3,11 @@
     padding: 0;
 }
 
-/* Adjacent sibling selector
-.father h1+p {
+/* using a custom attribute but it's possible to use default HTML attributes
+[my-attribute] {
     color: red;
 }
-
-.father p+h1 {
-    color: yellow;
-}
 */
-
-/* General sibling selector */
-.father h1~p {
+[my-attribute="value"] {
     color: red;
 }
