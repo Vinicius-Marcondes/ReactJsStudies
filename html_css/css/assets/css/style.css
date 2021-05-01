@@ -3,14 +3,27 @@
     padding: 0;
 }
 
-.father .list li:first-child {
-    background: red;
+ul li:nth-child(2n) {
+    color: purple;
 }
 
-.father .list li:last-child {
-    background: blue;
+/* options
+ul li:nth-child(n) {
+    color: purple;
 }
 
-input:required {
-    background: green;
+ul li:nth-child(even) {
+    color: purple;
 }
+
+ul li:nth-child(odd) {
+    color: purple;
+}
+
+using custom intervals
+
+ul li:nth-child(2n) {
+    color: purple;
+}
+
+ */
