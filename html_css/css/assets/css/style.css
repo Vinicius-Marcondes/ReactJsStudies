@@ -8,6 +8,8 @@
     color: red;
 }
 */
-[my-attribute="value"] {
+/* Have at least the specified value. For more options check attributes selectors */
+/* It's basically regex */
+[my-attribute~="value"] {
     color: red;
 }
