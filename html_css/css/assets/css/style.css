@@ -3,11 +3,32 @@
     padding: 0;
 }
 
-.heading {
-    color: red;
+/* Apply the properties from the father to all children
+div {
+color: inherit;
+}
+*/
+
+/* Makes the children don't inherit the properties from the father class */
+div {
+    color: initial;
+    margin-left: 20px;
 }
 
-.main-content h2.heading {
-    font-style: italic;
-    color: blue;
+/* Obligates the element to have the two classes
+.father.child {
+    color: red;
+}
+*/
+
+/* Select all the children from the father
+.father .child {
+    color: red;
+}
+ */
+
+/* Select the first children from the father, excluding the children of the children */
+/* child selector */
+.father > .child {
+    color: red;
 }
