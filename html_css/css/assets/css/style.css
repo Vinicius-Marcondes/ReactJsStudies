@@ -3,27 +3,27 @@
     padding: 0;
 }
 
-ul li:nth-child(2n) {
+ul li::after {
+    content: ' - ';
+    color: blue;
+}
+
+p::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line {
     color: purple;
 }
 
-/* options
-ul li:nth-child(n) {
-    color: purple;
+p::selection {
+    background: black;
+    color: white;
 }
-
-ul li:nth-child(even) {
-    color: purple;
+/* every pseudo-element uses the style */
+::placeholder {
+    color: orangered;
 }
-
-ul li:nth-child(odd) {
-    color: purple;
-}
-
-using custom intervals
-
-ul li:nth-child(2n) {
-    color: purple;
-}
-
- */
