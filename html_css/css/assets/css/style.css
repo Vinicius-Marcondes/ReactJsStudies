@@ -3,36 +3,14 @@
     padding: 0;
 }
 
-.heading {
-    transition: all 1s ease-in-out;
+.father .list li:first-child {
+    background: red;
 }
 
-.heading:hover {
-    background: #beb6b7;
+.father .list li:last-child {
+    background: blue;
 }
 
-a {
-    color: orangered;
-}
-
-a:link {
-    color: blue;
-}
-
-a:visited {
-    color: yellow;
-}
-
-a:active {
-    color: green;
-}
-
-input:focus {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    outline: none;
-    border: 1px solid black;
-}
-
-input:checked + p{
-    background: orange;
+input:required {
+    background: green;
 }
