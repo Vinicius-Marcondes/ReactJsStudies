@@ -3,13 +3,36 @@
     padding: 0;
 }
 
-/* using a custom attribute but it's possible to use default HTML attributes
-[my-attribute] {
-    color: red;
+.heading {
+    transition: all 1s ease-in-out;
 }
-*/
-/* Have at least the specified value. For more options check attributes selectors */
-/* It's basically regex */
-[my-attribute~="value"] {
-    color: red;
+
+.heading:hover {
+    background: #beb6b7;
+}
+
+a {
+    color: orangered;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:active {
+    color: green;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:checked + p{
+    background: orange;
 }
