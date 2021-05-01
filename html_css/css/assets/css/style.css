@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+.heading {
+    color: red;
+}
+
+.main-content h2.heading {
+    font-style: italic;
+    color: blue;
+}
